@@ -18,8 +18,8 @@ syn match celSignal '->'
 syn match celPragma '%'
 syn match celPragma '%%'
 
-syn match celIdent '_'
-syn match celIdent '_dur'
+syn match celIdent '\<_dur\>'
+syn match celIdent '\<_\>'
 
 syn match celString "'.*'"
 syn match celString '".*"'
