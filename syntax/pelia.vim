@@ -4,8 +4,8 @@ if exists('b:current_syntax') | finish|  endif
 " Keywords
 syn keyword celPragmaSt tempo sample inst
 
-syn keyword celFunction min maj min7 maj7
-syn keyword celRepeat seq rand
+syn keyword celFunction min maj min7 maj7 min9 maj9 up down
+syn keyword celRepeat seq rand repeat
 syn match celOperator '+'
 syn match celOperator '-'
 syn match celOperator ':'
