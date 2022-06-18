@@ -38,6 +38,7 @@ syn keyword celFilterOption attackLevel decayLevel attackLen decayLen sustainLen
 syn keyword celFilterOption int interval times fade
 syn keyword celFilterOption value
 syn keyword celFilterOption freq frequency shift amp amplitude wave
+syn keyword celFilterOption swingexp pan left right
 
 
 hi def link celPragmaSt Conditional
