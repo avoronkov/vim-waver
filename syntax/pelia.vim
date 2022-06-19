@@ -20,12 +20,15 @@ syn match celPragma '%%'
 
 syn match celIdent '\<_dur\>'
 syn match celIdent '\<_\>'
+syn match celIdent '\<true\>'
+syn match celIdent '\<false\>'
 
 syn match celString "'.*'"
 syn match celString '".*"'
 
 syn match celNumber '\<\d\+\>'
 syn match celNumber '\<\d\+\.\d\+\>'
+syn match celNumber '\<[ABCDEFG][bs]\?\d\>'
 
 syn match celForbiddedTab '\t'
 
@@ -36,9 +39,9 @@ syn match celComment "#.*$" contains=celTodo
 syn keyword celFilter adsr delay dist distortion vibrato am timeshift harmonizer harm flanger exp movexp ratio
 syn keyword celFilterOption attackLevel decayLevel attackLen decayLen sustainLen releaseLen
 syn keyword celFilterOption int interval times fade
-syn keyword celFilterOption value
+syn keyword celFilterOption value abs maxShift
 syn keyword celFilterOption freq frequency shift amp amplitude wave
-syn keyword celFilterOption swingexp pan left right
+syn keyword celFilterOption swingexp pan swingpan carrier left right
 
 
 hi def link celPragmaSt Conditional
