@@ -5,13 +5,15 @@ if exists('b:current_syntax') | finish|  endif
 syn keyword celPragmaSt tempo sample inst wave
 
 syn keyword celFunction min maj min7 maj7 min9 maj9 up down
-syn keyword celRepeat seq rand repeat
+syn keyword celRepeat seq rand repeat concat
 syn match celOperator '+'
 syn match celOperator '-'
 syn match celOperator ':'
 syn match celOperator '>'
 syn match celOperator '<'
 syn match celOperator '='
+
+syn match celOperator 'bits'
 
 syn match celSignal '->'
 
