@@ -2,7 +2,7 @@
 if exists('b:current_syntax') | finish|  endif
 
 " Keywords
-syn keyword celPragmaSt tempo sample inst
+syn keyword celPragmaSt tempo sample inst wave
 
 syn keyword celFunction min maj min7 maj7 min9 maj9 up down
 syn keyword celRepeat seq rand repeat
@@ -40,7 +40,7 @@ syn keyword celFilter adsr delay dist distortion vibrato am timeshift harmonizer
 syn keyword celFilterOption attackLevel decayLevel attackLen decayLen sustainLen releaseLen
 syn keyword celFilterOption int interval times fade
 syn keyword celFilterOption value abs maxShift
-syn keyword celFilterOption freq frequency shift amp amplitude wave
+syn keyword celFilterOption freq frequency shift amp amplitude
 syn keyword celFilterOption swingexp pan swingpan carrier left right
 
 
