@@ -14,6 +14,8 @@ syn match celOperator '<'
 syn match celOperator '='
 
 syn match celOperator 'bits'
+syn match celOperator "eucl'"
+syn match celOperator 'eucl'
 
 syn match celSignal '->'
 
