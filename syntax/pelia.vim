@@ -43,6 +43,8 @@ syn match celIdent '\<false\>'
 syn match celString "'.*'"
 syn match celString '".*"'
 
+syn match celCode '`[\n.]*`'
+
 syn match celNumber '\<\d\+\>'
 syn match celNumber '\<\d\+\.\d\+\>'
 syn match celNumber '\<[ABCDEFG][bs]\?\d\>'
@@ -104,6 +106,7 @@ hi def link celWaves Conditional
 
 hi def link celNumber Number
 hi def link celString String
+hi def link celCode Define
 hi def link celFunction Function
 hi def link celRepeat Function
 hi def link celOperator Operator
